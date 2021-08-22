@@ -1,8 +1,8 @@
 {
-  "name": "bedwars-stats",
-  "productName": "Bedwars Stats",
+  "name": "qui-bedwars-stats",
+  "productName": "Qui",
   "version": "1.0.0",
-  "description": "Bedwars Stats Checking Application",
+  "description": "Qui - A Bedwars Stats Checking Application",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
