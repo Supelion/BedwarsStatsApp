@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Minecraftia";
+  src: "./assets/Minecraftia.ttf"
+}
+
+body {
+  font-family: "Minecraftia";
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  font-weight: bold;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  place-items: center;
+}
+
+#errorEl {
+  color: red;
+}
+
+#inputEl {
+  border-radius: 25px;
+  border: none;
+  font-family: "Minecraftia";
+  padding-left: 10px;
+  padding-top: 2px;
+  outline: none;
+  padding-bottom: 2px;
+}
+
+button {
+  font-family: "Minecraftia";
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
