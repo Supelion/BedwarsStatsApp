@@ -11,8 +11,8 @@ Qui also has a web version, at: https://supelion.github.io/Qui/
 
 <h1>Screenshots:</h1>
 
-![image](https://user-images.githubusercontent.com/83178953/130350005-77195bc0-ae3b-4864-997f-df024c1c98c5.png)
-![image](https://user-images.githubusercontent.com/83178953/130350033-4fcd54ad-c6bf-460d-9515-55358168e762.png)
+![image](https://user-images.githubusercontent.com/83178953/130365999-797be4d2-9b2d-40c9-8de0-9e1cdd8428c4.png)
+![image](https://user-images.githubusercontent.com/83178953/130366011-88fc3e77-9598-4d7f-9c4f-0752ccb083b8.png)
 
 <h1>How to compile?</h1>
 <br/>
