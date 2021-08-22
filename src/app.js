@@ -15,6 +15,9 @@ async function getStats() {
     // Showing "Loading Stats..." to user
     loadingStatsEl.textContent = "Loading Stats...";
 
+    // Clearing any errors the user might have gotten
+    errorEl.textContent = "";
+
     // Clearing up the stats on the user's screen if they already exist
     fkdrEl.textContent = "";
     indexEl.textContent = "";
@@ -42,17 +45,12 @@ async function getStats() {
 
         // I did this so that if the player doesn't have a win, it doesnt go to the catch statement, instead,
         // it just adds the stats from the API to 0, which won't raise an error
-        let stars = 0;
-        let finalDeaths = 0;
-        let finalKills = 0;
-        let fkdr = 0;
-        let index = 0
 
-        stars += apiData.stats.BedWars.level;
-        finalDeaths += apiData.stats.BedWars.final_deaths;
-        finalKills += apiData.stats.BedWars.final_kills;
-        fkdr += parseFloat(((finalKills) / (finalDeaths)).toFixed(1));
-        index += parseFloat(Math.round((stars * fkdr ** 2) / 10));
+        const stars = apiData.stats.BedWars.level || 0;
+        const finalDeaths = apiData.stats.BedWars.final_deaths || 0;
+        const finalKills = apiData.stats.BedWars.final_kills || 0;
+        const fkdr = parseFloat(((finalKills) / (finalDeaths)).toFixed(1)) || 0;
+        const index = parseFloat(Math.round((stars * fkdr ** 2) / 10)) || 0;
 
         // Clearing any errors
         errorEl.textContent = "";
@@ -74,7 +72,7 @@ async function getStats() {
     };
 };
 
-// Enter key down event
+// Enter key down event, which triggers the getStats() function
 inputElement.addEventListener("keydown", event => {
     if (event.which == 13) {
         getStats();
