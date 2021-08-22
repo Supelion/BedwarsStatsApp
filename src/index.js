@@ -17,6 +17,8 @@ const createWindow = () => {
       nodeIntegration: true
     }
   });
+  
+  mainWindow.setMenuBarVisibility(false);
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 };
