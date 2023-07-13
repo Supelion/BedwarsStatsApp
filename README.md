@@ -4,7 +4,7 @@ A Hypixel Stats Checking Application!
 
 It uses the SlothPixel API, and electron. That's it.
 
-Qui also has a web version, at: https://supelion.github.io/Qui/
+Qui also has a web version, at: [https://mutyyab.github.io/Qui/](https://mutyyab.github.io/Qui/)
 
 <br/>
 <br/>
